@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Deck of Cards</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+
+    <div id="login_div" class="main-div">
+        <h3>DECK OF CARDS</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+
+        <button onclick="login()">Login to Account</button>
+        <br>
+        <button onclick="toggleLogin()">Register</button>
+    </div>
+
+    <div id="register_div" class="main-div">
+        <h3>Register</h3>
+        <input type="email" placeholder="Email..." id="register_email" />
+        <input type="password" placeholder="Password..." id="register_password" />
+
+        <button onclick="register()">Register</button>
+        <br>
+        <button onclick="toggleRegister()">Login</button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC-Ae3M05Uxuj2AP6bgqLzFLN8NVqru6rk",
+            authDomain: "fir-web-login-9d787.firebaseapp.com",
+            databaseURL: "https://fir-web-login-9d787.firebaseio.com",
+            projectId: "fir-web-login-9d787",
+            storageBucket: "",
+            messagingSenderId: "855071939148"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="scripts/login.js"></script>
+
+</body>
+
+</html>

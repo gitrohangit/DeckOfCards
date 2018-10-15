@@ -1,0 +1,160 @@
+ #deck
+{
+	position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 50%;
+} 
+
+body {
+	background-color: #45a173;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: hidden;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+  }
+
+.card
+{
+	padding: 10px;
+	border: solid 1px #808080;
+	background-color: white;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 14pt;
+	text-align: center;
+	color:black;
+	margin: 3px;
+}
+
+
+
+#placeholder
+{
+	position:fixed;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+}
+
+.fixedbutton {
+    position: fixed;
+    left: 0px;
+	top: 0px; 
+	padding: 10px 20px;
+	border-radius:30px;
+	margin: 10px;
+}
+
+.btn
+{
+	/* background:white; */
+	padding: 10px 20px;
+	border-radius:30px;
+	margin: 10px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	display: none;
+	
+}
+
+.logout{
+	z-index: 2;
+}
+
+#restart{
+	position: fixed; /* Sit on top of the page content */
+    display: none; /*Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.card .value{
+	font-size:15pt;
+	font-family: sans-serif;
+}
+
+.card .suit
+{
+	background-image: url('card.png');
+	height: 100px;
+	width: 90px;
+}
+
+.card .diamonds
+{
+	background-position-y: 100px;
+}
+
+.card .hearts
+{
+	background-position-x: 90px;
+}
+
+.card .clubs
+{
+	background-position-x:90px;
+	background-position-y:100px;
+}
+
+/* Placeholder Cards */
+
+.placeholderCard
+{
+	padding: 10px;
+	border: solid 1px #808080;
+	background-color: white;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 14pt;
+	text-align: center;
+	color:black;
+	margin: 5px;
+}
+
+.placeholderCard .suit
+{
+	background-image: url('card.png');
+	height: 100px;
+	width: 90px;
+}
+
+.placeholderCard .diamonds
+{
+	background-position-y: 100px;
+}
+
+.placeholderCard .hearts
+{
+	background-position-x: 90px;
+}
+
+.placeholderCard .clubs
+{
+	background-position-x:90px;
+	background-position-y:100px;
+}
+
+  
